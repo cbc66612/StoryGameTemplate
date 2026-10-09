@@ -1,1 +1,53 @@
-<!-- Add your index page here -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The School</title>
+</head>
+<body>
+    <h1>Welcome to the Story Game</h1>
+    <p>Welcome to the school story game. Explore the adventures and mysteries within the school setting. You had to Find the missing records from the school.</p>
+    <img src="hallway.jpg" alt="School Image" width="300"> 
+
+  
+
+   <p><a href="about.html">About Me</a></p>
+    <p><a href="contact.html">Contact Us</a></p>
+    <p><a href="aq.html">Asked Questions</a></p>
+    <p><a href="https://cornhub.website/">PLS Don't press</a></p>
+
+
+
+    <label for="payment">Payment method:</label>
+    <select id="payment" name="payment">
+        <option value="">Select a payment method</option>
+        <option value="credit_card">Credit Card</option>
+        <option value="paypal">PayPal</option>
+        <option value="cash">Cash</option>
+    </select>
+    <br>
+    <br>
+
+    <form action="game.html" method="get">
+        
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male"> Male
+        <input type="radio" id="female" name="gender" value="female"> Female
+        <input type="radio" id="other" name="gender" value="other"> Other
+          <br> <br>
+
+        <label for="age">Age: Must be at least 16: </label>
+      
+        <input type="number" id="age" name="age" min="16" max="100" required> 
+        
+        <br><br>
+
+
+        <label for="favoriteItem">Favorite item:</label>
+        <input type="text" id="favoriteItem" name="favoriteItem" placeholder="e.g. apple"> <br><br>
+        <input type="submit" value="Start Game" name="start"">
+    </form>
+    
+</body>
+</html>
