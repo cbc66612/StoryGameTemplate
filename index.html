@@ -4,22 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The School</title>
+
 </head>
 <body>
-    <h1>Welcome to the Story Game</h1>
-    <p>Welcome to the school story game. Explore the adventures and mysteries within the school setting. You had to Find the missing records from the school.</p>
-    <img src="hallway.jpg" alt="School Image" width="300"> 
-
+    <h1 style="color: rgb(9, 235, 228);text-align: center;background-color: rgba(172, 15, 15, 0.486);">Welcome to the Story Game</h1>
+    <p style="color: blueviolet;letter-spacing: 1px;">Welcome to the school story game. Explore the adventures and mysteries within the school setting. You had to Find the missing records from the school.</p>
+    <img style="border: 5px solid #bef103;" src="hallway.jpg" alt="School Image" width="300"> 
+     <style>
+        p {
+            font-size: 20px;
+            line-height: 1.6;
+        }
+    </style>
   
 
-   <p><a href="about.html">About Me</a></p>
-    <p><a href="contact.html">Contact Us</a></p>
-    <p><a href="aq.html">Asked Questions</a></p>
-    <p><a href="https://store.steampowered.com/">PLS Don't press</a></p>
+   <p style="border: 5px solid #e80731; padding: 10px;text-align: center;"><a href="about.html">About Me</a></p>
+    <p style="border: 5px solid #e80731; padding: 10px;text-align: center;"><a href="contact.html">Contact Us</a></p>
+    <p style="border: 5px solid #e80731; padding: 10px;text-align: center;"><a href="aq.html">Asked Questions</a></p>
+    <p style="border: 5px solid #e80731; padding: 10px;text-align: center;"><a href="https://store.steampowered.com/">PLS Don't press</a></p>
 
 
 
-    <label for="payment">Payment method:</label>
+    <label style="font-family: 'Courier New', Courier, monospace;" for="payment">Payment method:</label>
     <select id="payment" name="payment">
         <option value="">Select a payment method</option>
         <option value="credit_card">Credit Card</option>
@@ -31,23 +37,29 @@
 
     <form action="game.html" method="get">
         
-        <label for="gender">Gender:</label>
-        <input type="radio" id="male" name="gender" value="male"> Male
-        <input type="radio" id="female" name="gender" value="female"> Female
-        <input type="radio" id="other" name="gender" value="other"> Other
+        <label style="font-family: 'Courier New', Courier, monospace;" for="gender">Gender:</label>
+        <input style="font-family: 'Courier New', Courier, monospace;" type="radio" id="male" name="gender" value="male"> Male
+        <input style="font-family: 'Courier New', Courier, monospace;" type="radio" id="female" name="gender" value="female"> Female
+        <input style="font-family: 'Courier New', Courier, monospace;" type="radio" id="other" name="gender" value="other"> Other
           <br> <br>
 
-        <label for="age">Age: Must be at least 16: </label>
+        <label style="font-family: 'Courier New', Courier, monospace;" for="age">Age: Must be at least 16: </label>
       
-        <input type="number" id="age" name="age" min="16" max="100" required> 
+        <input style="font-family: 'Courier New', Courier, monospace;" type="number" id="age" name="age" min="16" max="100" required> 
         
         <br><br>
 
 
-        <label for="favoriteItem">Favorite item:</label>
-        <input type="text" id="favoriteItem" name="favoriteItem" placeholder="e.g. apple"> <br><br>
-        <input type="submit" value="Start Game" name="start"">
+        <label style="font-style: italic;" for="favoriteItem">Favorite item:</label>
+        <input style="font-style: italic;" type="text" id="favoriteItem" name="favoriteItem" placeholder="e.g. apple"> <br><br>
+        <input style="font-family: 'Courier New', Courier, monospace;" type="submit" value="Start Game" name="start"">
     </form>
+    <style>
+        p{
+            background-color: rgba(73, 193, 21, 0.5);
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
     
 </body>
 </html>
