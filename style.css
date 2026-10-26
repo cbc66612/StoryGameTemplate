@@ -1,7 +1,29 @@
-body{
-    background-color: rgba(31, 112, 104, 0.79);
+
+
+.heading {
+    font-size: 32px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: darkblue;
+    padding: 15px;
 }
 
-p{
-    background-color: rgba(34, 79, 108, 0.5);
+.card {
+    padding: 20px;
+    border: 2px solid darkblue;
+    background-color: lightgray;
+    text-align: center;
+}
+
+#health-display {
+    font-size: 24px;
+    color: darkred;
+    background-color: lightyellow;
+    font-weight: bold;
+    padding: 10px;
+    border: 2px solid darkred;
+}
+
+body {
+    background-color: lightblue;
 }
