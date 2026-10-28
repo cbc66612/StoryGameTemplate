@@ -27,3 +27,25 @@
 body {
     background-color: lightblue;
 }
+
+.subheading {
+   background-color: rgb(116, 119, 116);
+   text-align: center;
+   letter-spacing:0.1em;
+   border: 2px solid rgb(34, 34, 41);
+   margin: 50px;
+   padding: 15px;
+}
+
+.subcard{
+    padding: 24px; 
+    border: 2px solid rgb(34, 34, 41);
+    border-radius: 8px;
+    background-color: rgb(116, 119, 116);
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    width: 50%;
+    color: rgb(34, 34, 41);
+
+}
