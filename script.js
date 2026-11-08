@@ -206,6 +206,8 @@ function updateScene(sceneName) {
   scene.choices.forEach(function (choice) {
     const button = document.createElement("button");
 
+    button.className = "btn btn-primary";
+
     button.textContent = choice.text;
 
     button.addEventListener("click", function () {

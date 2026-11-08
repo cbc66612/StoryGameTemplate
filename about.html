@@ -4,51 +4,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    
     <title>About Me</title>
 </head>
 <body>
-     <header>
-      <nav>
-            <ul> 
-                <li><a href="index.html">Home</a></li>
-            </ul>
-            <ul> 
-                <li><a href="game.html">Play the game</a></li>
-            </ul>
-            <ul> 
-                <li><a href="question.html">Ask a question</a></li>
-            </ul>
-        </nav>
-    </header>
-    <h1 class="subheading">About Me</h1>
-    <h2 class="subheading">My Background</h2>
+   
+     <nav class="navbar navbar-expand bg-dark" data-bs-theme="dark">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">The School Mystery</a>
 
-    <img src="reddead.jpg" alt="Profile Image" width="500">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                    Home</a>
+            </li>
 
-    <p>I am a game designer who loves to travel and explore new places.</p>
+            <li class="nav-item">
+                <a class="nav-link" href="game.html">
+                    Play the Game</a>
+            </li>
 
-    <h2 class="subheading">My Favorites</h2>
-<ol class="subcard" >
-    <li>Sports
-        <ul>
-            <li>Volleyball</li>
-            <li>Basketball</li>
-        </ul>
-    </li>
-    <li>Playing video games
-        <ul>
-           
-            <li>
-                click <a href="https://store.steampowered.com/"> Red Dead Redemption 2</a>.
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">
+                    About Me</a>
             </li>
         </ul>
-    </li>
-    <li>Sleeping</li>
-</ol>
+    </div>
+</nav>
+<main class="container my-4">
+    <h1 class="text-center mb-4">About Me</h1>
 
-<h2 class="subheading">My Career goals</h2>
-<p class="subcard"> I want to sleep at home after graduate</p>
+    <div class="row g-4">
 
+        <!-- Left: background and picture -->
+        <div class="col-md-6">
+            <div class="card h-100">
+                <h2>My Background</h2>
+
+                <img class="img-fluid rounded mb-3"
+                     src="reddead.jpg"
+                     alt="Red Dead Redemption 2">
+
+                <p>
+                    I am a game designer who loves to travel
+                    and explore new places.
+                </p>
+            </div>
+        </div>
+
+        <!-- Right: favorites and goals -->
+        <div class="col-md-6">
+            <div class="card h-100">
+                <h2>My Favorites</h2>
+
+                <ol class="text-start">
+                    <li>
+                        Sports
+                        <ul>
+                            <li>Volleyball</li>
+                            <li>Basketball</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        Playing video games
+                        <ul>
+                            <li>
+                                <a href="https://store.steampowered.com/">
+                                    Red Dead Redemption 2
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>Sleeping</li>
+                </ol>
+
+                <h2>My Career Goals</h2>
+                <p>I want to sleep at home after I graduate.</p>
+            </div>
+        </div>
+
+    </div>
+</main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -4,10 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The School</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
 
 </head>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 <body>
-    <h1 class="heading">Welcome to the Story Game</h1>
+ 
+
+
+    <nav class="navbar navbar-expand bg-dark" data-bs-theme="dark">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">The School Mystery</a>
+
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="game.html">Play the Game</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">About Me</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<main class="container my-4">
+    <div class="row g-4">
+        <div class="col-md-6">
+
+ <h1 class="heading">Welcome to the Story Game</h1>
+
+
+
+
+
     <p class="heading" style="color: rgb(39, 3, 199);letter-spacing: 1px;">Welcome to the school story game. Explore the adventures and mysteries within the school setting. You had to Find the missing records from the school.</p>
     <img style="border: 5px solid #bef103;" src="hallway.jpg" alt="School Image" width="300"> 
      <style>
@@ -24,9 +59,10 @@
     <p style="border: 5px solid #e80731; padding: 10px;text-align: center;"><a href="https://store.steampowered.com/">PLS Don't press</a></p>
 
 
-
+        </div>
+        <div class="col-md-6">
     <label style="font-family: 'Courier New', Courier, monospace;" for="payment">Payment method:</label>
-    <select id="payment" name="payment">
+   <select class="form-select" id="payment" name="payment">
         <option value="">Select a payment method</option>
         <option value="credit_card">Credit Card</option>
         <option value="paypal">PayPal</option>
@@ -35,25 +71,49 @@
     <br>
     <br>
 
-    <form action="game.html" method="get">
-        
-        <label style="font-family: 'Courier New', Courier, monospace;" for="gender">Gender:</label>
-        <input style="font-family: 'Courier New', Courier, monospace;" type="radio" id="male" name="gender" value="male"> Male
-        <input style="font-family: 'Courier New', Courier, monospace;" type="radio" id="female" name="gender" value="female"> Female
-        <input style="font-family: 'Courier New', Courier, monospace;" type="radio" id="other" name="gender" value="other"> Other
-          <br> <br>
+    <form action="game.html" method="get" class="card p-4">
+    <div class="mb-3">
+        <p class="form-label">Gender:</p>
 
-        <label style="font-family: 'Courier New', Courier, monospace;" for="age">Age: Must be at least 16: </label>
-      
-        <input style="font-family: 'Courier New', Courier, monospace;" type="number" id="age" name="age" min="16" max="100" required> 
-        
-        <br><br>
+        <div class="form-check">
+            <input class="form-check-input" type="radio"
+                   id="male" name="gender" value="male">
+            <label class="form-check-label" for="male">Male</label>
+        </div>
 
+        <div class="form-check">
+            <input class="form-check-input" type="radio"
+                   id="female" name="gender" value="female">
+            <label class="form-check-label" for="female">Female</label>
+        </div>
 
-        <label style="font-style: italic;" for="favoriteItem">Favorite item:</label>
-        <input style="font-style: italic;" type="text" id="favoriteItem" name="favoriteItem" placeholder="e.g. apple"> <br><br>
-        <input style="font-family: 'Courier New', Courier, monospace;" type="submit" value="Start Game" name="start"">
-    </form>
+        <div class="form-check">
+            <input class="form-check-input" type="radio"
+                   id="other" name="gender" value="other">
+            <label class="form-check-label" for="other">Other</label>
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label" for="age">
+            Age: Must be at least 16
+        </label>
+        <input class="form-control" type="number"
+               id="age" name="age" min="16" max="100" required>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label" for="favoriteItem">Favorite item:</label>
+        <input class="form-control" type="text"
+               id="favoriteItem" name="favoriteItem" placeholder="e.g. apple">
+    </div>
+
+    <button class="btn btn-primary" type="submit">Start Game</button>
+</form>
+
+  </div>
+    </div>
+</main>
     <style>
         p{
             background-color: rgba(73, 193, 21, 0.5);
